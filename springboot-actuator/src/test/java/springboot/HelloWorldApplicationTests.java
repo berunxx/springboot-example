@@ -2,6 +2,7 @@ package springboot;
 
 import java.util.Map;
 
+import com.myluffy.springboot.ActuatorApplication;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,7 +23,7 @@ import static org.assertj.core.api.BDDAssertions.then;
  * @author Dave Syer
  */
 @RunWith(SpringRunner.class)
-@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
+@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT, classes = ActuatorApplication.class)
 @TestPropertySource(properties = {"management.port=0"})
 public class HelloWorldApplicationTests {
 

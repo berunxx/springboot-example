@@ -15,7 +15,10 @@
         <!--  -->
         <module>springboot-actuator</module>
 
+        <!-- webflux 注解实现 -->
         <module>springboot-webflux</module>
+        <!-- webflux 函数式实现 -->
+        <module>springboot-webflux-functional</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
