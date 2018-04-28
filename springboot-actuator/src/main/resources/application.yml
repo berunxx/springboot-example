@@ -1,0 +1,17 @@
+management:
+  security:
+    enabled: false
+  port: 8081
+
+
+info:
+  aaa:
+    name: luffy
+    email: luffy7855@gmail.com
+  bbb:
+    age: 25
+    hobbies: running
+  build:
+    artifact: "@project.artifactId@"
+    name: "@project.name@"
+    version: "@project.version@"
