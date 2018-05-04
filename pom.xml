@@ -19,6 +19,7 @@
         <module>springboot-webflux</module>
         <!-- webflux 函数式实现 -->
         <module>springboot-webflux-functional</module>
+        <module>springboot-nosql-redis</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
