@@ -20,6 +20,8 @@
         <!-- webflux 函数式实现 -->
         <module>springboot-webflux-functional</module>
         <module>springboot-nosql-redis</module>
+        <module>springboot-dubbo-consumer</module>
+        <module>springboot-dubbo-provider</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>

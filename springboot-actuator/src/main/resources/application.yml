@@ -2,9 +2,11 @@ management:
   security:
     enabled: false
   server:
-    port: 8081 # springboot 2.0+   £¬µÍ°æ±¾ÊÇ£º management.port
-
-
+    port: 8081
+  endpoints:
+    web:
+      exposure:
+        include: "*"
 info:
   aaa:
     name: luffy
