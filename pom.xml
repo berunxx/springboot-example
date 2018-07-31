@@ -22,6 +22,8 @@
         <module>springboot-nosql-redis</module>
         <module>springboot-dubbo-consumer</module>
         <module>springboot-dubbo-provider</module>
+        <module>springboot-netty</module>
+        <module>short-url</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>

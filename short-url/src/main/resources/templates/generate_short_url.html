@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>路小飞的生成短链接</title>
+</head>
+<body>
+<input type="text" name="originalUrl" placeholder="请输入链接" id="originalUrl">
+<input type="button" value="生成" onclick="generateUrl()">
+
+<div id="info">
+
+</div>
+</body>
+<script type="text/javascript">
+    function generateUrl() {
+        var originalUrl = document.getElementById('originalUrl').value;
+        var info = document.getElementById('info');
+        console.log(originalUrl)
+        var xhr = new XMLHttpRequest();
+        xhr.onreadystatechange = function(){
+            if( xhr.readyState == 4){
+                if( xhr.status >= 200 && xhr.status < 300 || xhr.status == 304){
+                    info.innerHTML = xhr.responseText;
+                }
+            }
+        };
+        xhr.open("get","http://localhost:8080/generate?originalUrl=" + originalUrl,true);
+        xhr.send(null);
+    }
+
+</script>
+</html>
